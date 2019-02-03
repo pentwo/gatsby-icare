@@ -12,8 +12,10 @@ import About from '../components/about'
 import Map from '../components/map'
 import Testimony from '../components/testimony'
 
-ReactGA.initialize('UA-126836067-1')
-ReactGA.pageview(window.location.pathname + window.location.search)
+if (typeof window !== 'undefined') {
+  ReactGA.initialize('UA-126836067-1')
+  ReactGA.pageview(window.location.pathname + window.location.search)
+}
 
 const IndexPage = ({ data }) => {
   return (
