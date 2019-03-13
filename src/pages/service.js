@@ -6,7 +6,7 @@ import Hero from '../components/hero'
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Price" />
+    <SEO title="Services" />
     <Hero />
     <section className="section services">
       <section className="section service">

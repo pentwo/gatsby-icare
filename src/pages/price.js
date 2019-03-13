@@ -8,7 +8,7 @@ import Hero from '../components/hero'
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Price" />
     <Hero />
     <section className="section service">
       <div className="container">
