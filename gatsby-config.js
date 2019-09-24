@@ -37,7 +37,7 @@ module.exports = {
         // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-robots-txt',
+    // 'gatsby-plugin-robots-txt',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
