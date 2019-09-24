@@ -20,7 +20,7 @@ if (typeof window !== 'undefined') {
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title="Home" />
       <section className="hero is-large is-primary">
         <div className="hero-body hero-has-bg">
           <div className="container">
