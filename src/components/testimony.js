@@ -3,6 +3,9 @@ import Img from 'gatsby-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
 
+const TESTIMONY_API =
+  'https://api.sheety.co/b61e85ff-6929-42f0-b712-903293585003'
+
 export default class Testimony extends Component {
   state = {
     quotes: {},
@@ -10,7 +13,7 @@ export default class Testimony extends Component {
   }
 
   setTestimonies = async () => {
-    await fetch('/testimony.json')
+    await fetch(TESTIMONY_API)
       .then(res => res.json())
       .then(data => {
         this.setState({
@@ -21,17 +24,6 @@ export default class Testimony extends Component {
 
   componentDidMount() {
     this.setTestimonies()
-    // this.setState({
-    //   avatar: { ...this.props.avatarInfo },
-    // })
-  }
-  componentDidUpdate() {
-    // this.renderQuote()
-    // this.timer = setInterval(this.randomRenderQuote(), 3000)
-  }
-
-  componentWillUnmount() {
-    // clearInterval(this.timer)
   }
 
   randomRenderQuote = () => {
@@ -48,14 +40,14 @@ export default class Testimony extends Component {
 
     const { avatarInfo } = this.props
 
-    console.log('avatarInfo: ', avatarInfo)
+    // console.log('avatarInfo: ', avatarInfo)
 
     return this.state.quotes.map(quote => {
-      console.log('quote.avatar', quote.avatar)
+      // console.log('quote.avatar', quote.avatar)
       const image = avatarInfo.filter(i => {
         return i.node.name === quote.avatar ? i.node.name : false
       })
-      console.log('image: ', image[0].node)
+      // console.log('image: ', image[0].node)
 
       return <Quote {...quote} avatarInfo={image[0].node} />
     })
