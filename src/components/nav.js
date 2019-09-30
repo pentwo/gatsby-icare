@@ -8,6 +8,7 @@ import {
   faHandHoldingHeart,
   faDollarSign,
   faTicketAlt,
+  faHandPaper,
 } from '@fortawesome/free-solid-svg-icons'
 
 export default class Nav extends Component {
@@ -61,6 +62,10 @@ export default class Nav extends Component {
                 <FontAwesomeIcon icon={faHome} />
                 &nbsp; Home
               </Link>
+              <Link to="/about" className="navbar-item">
+                <FontAwesomeIcon icon={faHandPaper} />
+                &nbsp; About
+              </Link>
 
               <div className="navbar-item has-dropdown is-hoverable">
                 <Link to="/service" className="navbar-link">
@@ -90,7 +95,7 @@ export default class Nav extends Component {
                 <div className="field is-grouped">
                   <p className="control">
                     <a
-                      className="button is-primary"
+                      className="button is-primary is-outlined is-inverted"
                       href="https://wuasianmassage.mylocalsalon.com/onlinebooking/v7410/Steps/SelectServices.aspx"
                     >
                       <span className="icon">
@@ -105,7 +110,7 @@ export default class Nav extends Component {
                 <div className="field is-grouped">
                   <p className="control">
                     <a
-                      className="button is-primary"
+                      className="button is-primary is-outlined is-inverted"
                       href="https://www.wusdayspanmassage.com.au/price/gift-voucher/"
                     >
                       <span className="icon">

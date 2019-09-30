@@ -9,8 +9,10 @@ import Layout from '../components/layout'
 // import Image from '../components/image'
 import SEO from '../components/seo'
 import About from '../components/about'
+import Nav from '../components/nav'
 import Map from '../components/map'
 import Testimony from '../components/testimony'
+import Features from '../components/features'
 
 if (typeof window !== 'undefined') {
   ReactGA.initialize('UA-126836067-1')
@@ -22,6 +24,11 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <section className="hero is-large is-primary">
+        <div className="hero-head">
+          <div className="container">
+            <Nav />
+          </div>
+        </div>
         <div className="hero-body hero-has-bg">
           <div className="container">
             <div className="columns">
@@ -30,43 +37,35 @@ const IndexPage = ({ data }) => {
                 <h2 className="subtitle is-4">
                   The best time to take care of you
                 </h2>
-                <div className="field is-grouped">
-                  <p className="control">
-                    <a
-                      className="button is-large is-primary"
-                      href="https://wuasianmassage.mylocalsalon.com/onlinebooking/v7410/Steps/SelectServices.aspx"
-                    >
-                      <span className="icon">
-                        <FontAwesomeIcon icon={faCalendarAlt} />
-                      </span>
-                      <span>Book Now</span>
-                    </a>
-                    {/* <ReactGA.OutboundLink
-                    eventLabel="Conversion"
-                    to="https://wuasianmassage.mylocalsalon.com/onlinebooking/v7410/Steps/SelectServices.aspx"
-                    className="button is-large is-primary"
+                <div className="buttons are-medium">
+                  <a
+                    className="button is-primary"
+                    href="https://wuasianmassage.mylocalsalon.com/onlinebooking/v7410/Steps/SelectServices.aspx"
                   >
                     <span className="icon">
                       <FontAwesomeIcon icon={faCalendarAlt} />
                     </span>
                     <span>Book Now</span>
-                  </ReactGA.OutboundLink> */}
-                    &nbsp;
-                    <a
-                      className="button is-large is-primary"
-                      href="https://www.wusdayspanmassage.com.au/price/gift-voucher/"
-                    >
-                      <span className="icon">
-                        <FontAwesomeIcon icon={faTicketAlt} />
-                      </span>
-                      <span>Gift Voucher</span>
-                    </a>
-                  </p>
+                  </a>
+
+                  <a
+                    className="button is-primary"
+                    href="https://www.wusdayspanmassage.com.au/price/gift-voucher/"
+                  >
+                    <span className="icon">
+                      <FontAwesomeIcon icon={faTicketAlt} />
+                    </span>
+                    <span>Gift Voucher</span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="section features">
+        <Features />
       </section>
       <section className="section has-text-centered">
         <figure style={{ maxWidth: `960px`, margin: `0 auto` }}>

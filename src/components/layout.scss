@@ -17,14 +17,21 @@
 $blue: #06bcef;
 // Add pink and its invert
 $pink: #eec5c5;
-$pink-invert: #111111;
+// $pink-invert: #113a3a;
+$pink-invert: #453d46;
 // Update the sans-serif font family
 $family-sans-serif: 'Helvetica', 'Arial', sans-serif;
+
+// Cards
+$card-shadow: 2px 8px 3px rgba($pink-invert, 0.1),
+  0 0 0 1px rgba($pink-invert, 0.1);
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
 $primary: $pink;
 $primary-invert: $pink-invert;
+
+$secondary: $blue;
 
 .navbar-brand {
   a:hover {
@@ -89,6 +96,37 @@ $primary-invert: $pink-invert;
     border-radius: 50%;
   }
 }
+
+.bd-focus{
+  border-radius: 6px;
+  color: $pink-invert;
+  cursor: pointer;
+  display: block;
+    flex: 1 1 0;
+  padding: 1.25rem .75rem .75rem;
+
+
+  text-align: center;
+  text-decoration: none currentcolor solid;
+
+  transition: background 0.7s;
+
+  &:hover{
+    background: #f1f1f1;
+
+    .title,
+    .subtitle{
+      color: $secondary;
+    }
+  }
+
+
+  &-icon {
+
+  }
+}
+
+
 
 // 4. Import the rest of Bulma
 @import '../../node_modules/bulma/bulma.sass';

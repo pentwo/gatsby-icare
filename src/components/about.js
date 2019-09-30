@@ -12,6 +12,7 @@ export default class About extends Component {
           className="image"
           alt="jenny Portrait"
           style={{
+            display: `flex`,
             maxWidth: `520px`,
             margin: `0 auto`,
           }}

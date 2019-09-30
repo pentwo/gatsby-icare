@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
+// import Header from './header'
 import Footer from './footer'
 import './layout.scss'
 // import 'bulma'
@@ -20,7 +20,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <React.Fragment>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <div className="body">{children}</div>
         <Footer />
       </React.Fragment>
