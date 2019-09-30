@@ -97,36 +97,36 @@ $secondary: $blue;
   }
 }
 
-.bd-focus{
+.bd-focus {
   border-radius: 6px;
   color: $pink-invert;
   cursor: pointer;
   display: block;
-    flex: 1 1 0;
-  padding: 1.25rem .75rem .75rem;
-
+  flex: 1 1 0;
+  padding: 1.25rem 0.75rem 0.75rem;
 
   text-align: center;
   text-decoration: none currentcolor solid;
 
-  transition: background 0.7s;
+  figure {
+    // transform: scale(0.9);
+    // filter: grayscale(100%);
+    filter: opacity(0.6);
+    transition: all 1s;
+  }
 
-  &:hover{
-    background: #f1f1f1;
-
+  &:hover {
+    figure {
+      transform: scale(1.1);
+      filter: opacity(1);
+      // filter: grayscale(0);
+    }
     .title,
-    .subtitle{
+    .subtitle {
       color: $secondary;
     }
   }
-
-
-  &-icon {
-
-  }
 }
-
-
 
 // 4. Import the rest of Bulma
 @import '../../node_modules/bulma/bulma.sass';
