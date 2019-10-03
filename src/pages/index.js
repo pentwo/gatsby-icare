@@ -90,12 +90,6 @@ const IndexPage = ({ data }) => {
                 <li>Member of Massage & Myotherapy Association</li>
               </ul>
             </div>
-            <h2>Skills</h2>
-            <p>As part of Diploma of Remedial Massage, I Studied</p>
-            <ul>
-              <li>Deep tissue</li>
-              <li>Swedish</li>
-            </ul>
           </div>
         </div>
       </section>
