@@ -14,7 +14,7 @@ export default class About extends Component {
           style={{
             display: `flex`,
             maxWidth: `520px`,
-            margin: `0 auto`,
+            margin: `2rem auto`,
           }}
         >
           <ImageJennyPortrait />
@@ -44,6 +44,30 @@ export default class About extends Component {
                 ensure that you obtain the best result of your care, I am
                 dedicated to work with you and your family to obtain reach your
                 health goals.
+              </p>
+              <p>
+                As part of Diploma of Remedial massage, I studied
+                <ul>
+                  <li>Deep Tissue</li>
+                  <li>Swedish</li>
+                  <li>Trigger Point</li>
+                  <li>Japanese Shiatsu</li>
+                  <li>Sport Massage</li>
+                  <li>Myofascial Release</li>
+                  <li>Positional Release</li>
+                  <li>Trager</li>
+                  <li>Postual Massage</li>
+                  <li>Reflexology</li>
+                  <li>Manual Lymphtic Drainage</li>
+                </ul>
+              </p>
+              <p>
+                Modalities I have learnt on top of my Remedial massage
+                <ul>
+                  <li>Pregnancy Massage</li>
+                  <li>Kinesiotaping</li>
+                  <li>Craniosacral Therapy</li>
+                </ul>
               </p>
             </div>
           </div>
