@@ -13,7 +13,7 @@ const Features = () => {
         <p className="title is-2">
           <strong>Remedial Massage</strong>
         </p>
-        <p className="subtitle is-6">Recover Nicer & Faster.</p>
+        <p className="subtitle is-6">Recover Nicer & Faster</p>
       </div>
       <div className="bd-focus column has-text-centered">
         <figure className="bd-focus-icon">
@@ -22,7 +22,7 @@ const Features = () => {
         <p className="title is-2">
           <strong>Pregency Massage</strong>
         </p>
-        <p className="subtitle is-6">Recover Nicer & Faster.</p>
+        <p className="subtitle is-6">Relief and Refresh</p>
       </div>
       <div className="bd-focus column has-text-centered">
         <figure className="bd-focus-icon">
@@ -31,7 +31,7 @@ const Features = () => {
         <p className="title is-2">
           <strong>Aromatherapy Massage</strong>
         </p>
-        <p className="subtitle is-6">Recover Nicer & Faster.</p>
+        <p className="subtitle is-6">Ease with essential oils</p>
       </div>
     </section>
   )
