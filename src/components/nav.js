@@ -77,6 +77,9 @@ export default class Nav extends Component {
                     Remedial/Sports Massage
                   </Link>
                   <Link to="/service" className="navbar-item">
+                    Fertility Massage Therapy
+                  </Link>
+                  <Link to="/service" className="navbar-item">
                     Pregnancy Massage
                   </Link>
                   <Link to="/service" className="navbar-item">

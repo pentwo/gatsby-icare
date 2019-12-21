@@ -24,6 +24,21 @@ const SecondPage = () => (
       </section>
       <section className="section service">
         <div className="container">
+          <h1 className="title">What is Fertility Massage Therapy?</h1>
+          <p>
+            <strong>Fertility Massage Therapy</strong> is a deep, yet gentle,
+            non invasive abdominal and sacral therapy that focus on improving
+            circulation to the abdominal organs with an aim to improve blood,
+            nerve and lymph flow. The massage also focus on releasing physical
+            and emotional tension, helping to loosen debris (that has been
+            accumulating in your gut for years) encouraging a natural movement
+            and clearing both physical and emotional congestion, leaving you and
+            your abdomen feeling lighter and freer.⠀
+          </p>
+        </div>
+      </section>
+      <section className="section service">
+        <div className="container">
           <h1 className="title">What is Aromatherapy Massage?</h1>
           <p>
             <strong>Aromatherapy massage</strong> is Swedish massage therapy

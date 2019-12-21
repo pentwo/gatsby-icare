@@ -67,6 +67,7 @@ export default class About extends Component {
                   <li>Pregnancy Massage</li>
                   <li>Kinesiotaping</li>
                   <li>Craniosacral Therapy</li>
+                  <li>Fertility Massage Therapy</li>
                 </ul>
               </p>
             </div>
