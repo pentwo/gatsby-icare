@@ -132,6 +132,21 @@ export const query = graphql`
     }
   }
 `
+// FertilityQueryAll: allFile(
+//   filter: { relativePath: { regex: "Fertility-Massage-*.jpg/" } }
+// ) {
+//   edges {
+//     node {
+//       relativePath
+//       name
+//       childImageSharp {
+//         fixed(width: 150) {
+//           ...GatsbyImageSharpFixed
+//         }
+//       }
+//     }
+//   }
+// }
 
 // const ImageJennyAd = () => (
 //   <StaticQuery

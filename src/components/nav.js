@@ -76,7 +76,7 @@ export default class Nav extends Component {
                   <Link to="/service" className="navbar-item">
                     Remedial/Sports Massage
                   </Link>
-                  <Link to="/service" className="navbar-item">
+                  <Link to="/fertility" className="navbar-item">
                     Fertility Massage Therapy
                   </Link>
                   <Link to="/service" className="navbar-item">

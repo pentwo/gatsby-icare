@@ -13,7 +13,7 @@ export default class footer extends Component {
           <div className="container">
             <div className="columns">
               <div className="column is-8-desktop is-offset-2-desktop">
-                <p>
+                <div>
                   <small>
                     Source code licensed
                     <a href="http://opensource.org/licenses/mit-license.php">
@@ -21,18 +21,18 @@ export default class footer extends Component {
                       MIT
                     </a>
                   </small>
-                </p>
-                <p>
+                </div>
+                <div>
                   <small>
                     {' '}
                     Made by <Link to="/">Code by Pen</Link>{' '}
                   </small>
-                </p>
-                <p>
+                </div>
+                <div>
                   <a href="http://bulma.io">
                     <Image alt="Made with Bulma" />
                   </a>
-                </p>
+                </div>
               </div>
             </div>
           </div>

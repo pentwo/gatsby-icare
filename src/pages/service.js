@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Hero from '../components/hero'
 
-const SecondPage = () => (
+const Service = () => (
   <Layout>
     <SEO title="Services" />
     <Hero />
@@ -65,4 +65,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default Service
