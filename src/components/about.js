@@ -26,24 +26,30 @@ export default class About extends Component {
             <div className="column is-10 is-offset-1">
               <p>My name is Jenny.</p>
               <p>
-                I am a 8-years-experienced massage therapist. Qualified Diploma
+                I am a 9-years-experienced massage therapist. Qualified Diploma
                 of remedial massage and practitioner of pregnancy massage.
               </p>
               <p>
                 I completed my Bachelor of Education and worked as a teacher in
                 child cares and kindergarten in Taiwan. I LOVE to work with
                 children and families. When I moved to Australia in 2010, I
-                started to learn Swedish massage and completed my diploma of
-                Remedial Massage in 2014. Then, I started to think how to
+                started to learn Swedish massage and completed my Diploma of
+                Remedial Massage in 2014. Then, I started to think about how to
                 combine these professional skills together. Therefore I choose
-                to be a specialist of Pregnancy Massage. However, that doesn’t
-                mean I only work with pregnancy ladies. I am more than happy to
-                provide my support to every members in the family, Fathers,
-                Mothers, Grandparents, Sons, Daughters, etc. with 8 years in the
-                field of Remedial Massage, I have wealth of experience that will
-                ensure that you obtain the best result of your care, I am
-                dedicated to work with you and your family to obtain reach your
-                health goals.
+                to be a specialist in Pregnancy Massage. However, that doesn’t
+                mean I only work with pregnant ladies.
+              </p>
+              <p>
+                In 2019, I did Fertility massage Therapy training. Therefore, I
+                am extending my service to support the ladies who are struggling
+                in infertility, irregular menstrual cycle, imbalance hormones
+                during menopause, heavy period pain ...etc. Also I am more than
+                happy to provide my support to every member in the family,
+                Fathers, Mothers, Grandparents, Sons, Daughters, etc. with 9
+                years in the field of Remedial Massage, I have wealth of
+                experience that will ensure that you obtain the best result of
+                your care, I am dedicated to working with you and your family to
+                obtain reach your health goals.
               </p>
               <p>
                 As part of Diploma of Remedial massage, I studied
