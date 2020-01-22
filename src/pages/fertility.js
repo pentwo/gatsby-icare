@@ -37,9 +37,7 @@ const Fertility = ({ data }) => {
             <figure style={{ maxWidth: `960px`, margin: `2rem auto` }}>
               <Img
                 alt="Fertility massage - 1"
-                fluid={
-                  data.allFertilityImgsQuery.edges[1].node.childImageSharp.fluid
-                }
+                fluid={data.FertilityImgsQuery_3.childImageSharp.fluid}
               />
             </figure>
           </section>
@@ -67,9 +65,7 @@ const Fertility = ({ data }) => {
           <figure style={{ maxWidth: `960px`, margin: `2rem auto` }}>
             <Img
               alt="Fertility massage - 2"
-              fluid={
-                data.allFertilityImgsQuery.edges[3].node.childImageSharp.fluid
-              }
+              fluid={data.FertilityImgsQuery_1.childImageSharp.fluid}
             />
           </figure>
           <section className="section">
@@ -110,9 +106,7 @@ const Fertility = ({ data }) => {
             <figure style={{ maxWidth: `320px`, margin: `2rem auto` }}>
               <Img
                 alt="Fertility massage - 3"
-                fluid={
-                  data.allFertilityImgsQuery.edges[0].node.childImageSharp.fluid
-                }
+                fluid={data.FertilityImgsQuery_2.childImageSharp.fluid}
               />
             </figure>
           </section>
@@ -126,20 +120,49 @@ export default Fertility
 
 export const imageQuery = graphql`
   query allFertilityImgsQuery {
-    allFertilityImgsQuery: allFile(
-      filter: { relativePath: { regex: "/Fertility-Massage-[0-9].jpg/" } }
+    FertilityImgsQuery_1: file(
+      relativePath: { eq: "Fertility-Massage-2.jpg" }
     ) {
-      edges {
-        node {
-          relativePath
-          name
-          childImageSharp {
-            fluid(maxWidth: 960) {
-              ...GatsbyImageSharpFluid_noBase64
-            }
-          }
+      childImageSharp {
+        fluid(maxWidth: 960) {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+
+    FertilityImgsQuery_2: file(
+      relativePath: { eq: "Fertility-Massage-3.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 960) {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+
+    FertilityImgsQuery_3: file(
+      relativePath: { eq: "Fertility-Massage-4.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 960) {
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
   }
 `
+// allFile(
+//   filter: { relativePath: { regex: "/Fertility-Massage-1.jpg/" } }
+// ) {
+//   edges {
+//     node {
+//       relativePath
+//       name
+//       childImageSharp {
+//         fluid(maxWidth: 960) {
+//           ...GatsbyImageSharpFluid_noBase64
+//         }
+//       }
+//     }
+//   }
+// }
