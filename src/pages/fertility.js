@@ -38,7 +38,7 @@ const Fertility = ({ data }) => {
               <Img
                 alt="Fertility massage - 1"
                 fluid={
-                  data.allFertilityImgsQuery.edges[3].node.childImageSharp.fluid
+                  data.allFertilityImgsQuery.edges[1].node.childImageSharp.fluid
                 }
               />
             </figure>
@@ -64,11 +64,11 @@ const Fertility = ({ data }) => {
             </p>
           </section>
 
-          <figure style={{ maxWidth: `360px`, margin: `2rem auto` }}>
+          <figure style={{ maxWidth: `960px`, margin: `2rem auto` }}>
             <Img
               alt="Fertility massage - 2"
               fluid={
-                data.allFertilityImgsQuery.edges[1].node.childImageSharp.fluid
+                data.allFertilityImgsQuery.edges[3].node.childImageSharp.fluid
               }
             />
           </figure>
@@ -107,11 +107,11 @@ const Fertility = ({ data }) => {
                 <li>Improving mental health</li>
               </ul>
             </div>
-            <figure style={{ maxWidth: `720px`, margin: `2rem auto` }}>
+            <figure style={{ maxWidth: `320px`, margin: `2rem auto` }}>
               <Img
                 alt="Fertility massage - 3"
                 fluid={
-                  data.allFertilityImgsQuery.edges[2].node.childImageSharp.fluid
+                  data.allFertilityImgsQuery.edges[0].node.childImageSharp.fluid
                 }
               />
             </figure>
