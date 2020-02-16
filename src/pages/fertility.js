@@ -126,7 +126,7 @@ const Fertility = ({ data }) => {
         </section>
       </main>
       <div className="section__video is-hidden-mobile">
-        <div className="container">
+        <div className="container has-text-centered">
           <video loop muted autoPlay>
             <source media="(min-width: 320px)" src={fertilityVideo} />
           </video>
