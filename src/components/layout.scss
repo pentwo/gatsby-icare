@@ -128,5 +128,6 @@ $secondary: $blue;
   }
 }
 
+@import './scss/fertility.scss';
 // 4. Import the rest of Bulma
 @import '../../node_modules/bulma/bulma.sass';

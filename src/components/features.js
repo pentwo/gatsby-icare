@@ -1,7 +1,7 @@
 import React from 'react'
 import IconMassage from '../images/icons/massage.svg'
 import IconPregnant from '../images/icons/pregnant.svg'
-import IconSpa from '../images/icons/spa.svg'
+import IconMuladhara from '../images/icons/muladhara.svg'
 
 const Features = () => {
   return (
@@ -20,18 +20,18 @@ const Features = () => {
           <IconPregnant />
         </figure>
         <p className="title is-2">
-          <strong>Pregency Massage</strong>
+          <strong>Pregnancy Massage</strong>
         </p>
         <p className="subtitle is-6">Relief and Refresh</p>
       </div>
       <div className="bd-focus column has-text-centered">
         <figure className="bd-focus-icon">
-          <IconSpa />
+          <IconMuladhara />
         </figure>
         <p className="title is-2">
-          <strong>Aromatherapy Massage</strong>
+          <strong>Fertility Therapy</strong>
         </p>
-        <p className="subtitle is-6">Ease with essential oils</p>
+        <p className="subtitle is-6">Chakra Balance</p>
       </div>
     </section>
   )

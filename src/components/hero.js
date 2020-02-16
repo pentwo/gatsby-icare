@@ -13,7 +13,9 @@ export default class Hero extends Component {
         <div className="hero-body">
           <div className="container">
             <div className="column is-8-desktop is-offset-2-desktop">
-              <h1 className="title is-1 is-spaced">iCare Remedial Massage</h1>
+              <h1 className="title is-1 is-spaced">
+                {this.props.title ? this.props.title : 'iCare Remedial Massage'}
+              </h1>
             </div>
           </div>
         </div>

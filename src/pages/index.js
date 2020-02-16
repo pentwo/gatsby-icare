@@ -69,7 +69,6 @@ const IndexPage = ({ data }) => {
       </section>
       <section className="section has-text-centered">
         <figure style={{ maxWidth: `960px`, margin: `0 auto` }}>
-          {/* <ImageJennyAd /> */}
           <Img
             alt="pregnancy massage ad"
             fluid={data.JennyAdQuery.childImageSharp.fluid}

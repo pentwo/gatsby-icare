@@ -29,9 +29,27 @@ export default class footer extends Component {
                   </small>
                 </div>
                 <div>
-                  <a href="http://bulma.io">
-                    <Image alt="Made with Bulma" />
-                  </a>
+                  <small>
+                    <a href="http://bulma.io">
+                      <Image alt="Made with Bulma" />
+                    </a>
+                  </small>
+                </div>
+                <div>
+                  <small>
+                    Icons made by{' '}
+                    <a
+                      href="https://www.flaticon.com/authors/vitaly-gorbachev"
+                      title="Vitaly Gorbachev"
+                    >
+                      Vitaly Gorbachev
+                    </a>{' '}
+                    from{' '}
+                    <a href="https://www.flaticon.com/" title="Flaticon">
+                      {' '}
+                      www.flaticon.com
+                    </a>
+                  </small>
                 </div>
               </div>
             </div>
