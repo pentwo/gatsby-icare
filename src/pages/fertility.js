@@ -16,7 +16,7 @@ const Fertility = ({ data }) => {
       <main>
         <section className="container">
           <section className="section columns">
-            <div className="column">
+            <div className="column column-justified">
               <h3 className="title">
                 <span role="img" aria-label="writing-hand">
                   ✍️
@@ -47,7 +47,7 @@ const Fertility = ({ data }) => {
             </div>
           </section>
           <section className="section columns">
-            <div className="column">
+            <div className="column column-justified">
               <h3 className="title">
                 <span role="img" aria-label="writing-hand">
                   ✍️
