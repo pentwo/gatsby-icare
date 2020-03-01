@@ -1,0 +1,16 @@
+.section-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  align-content: center;
+  height: 404px;
+}
+
+.text,
+.table {
+  align-self: center;
+}
+
+.remMassage {
+  // height: 33vh;
+}
