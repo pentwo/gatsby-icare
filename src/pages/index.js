@@ -6,7 +6,6 @@ import Img from 'gatsby-image'
 import ReactGA from 'react-ga'
 
 import Layout from '../components/layout'
-// import Image from '../components/image'
 import SEO from '../components/seo'
 import About from '../components/about'
 import Nav from '../components/nav'
