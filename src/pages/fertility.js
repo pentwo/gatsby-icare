@@ -46,36 +46,7 @@ const Fertility = ({ data }) => {
               </figure>
             </div>
           </section>
-          <section className="section columns">
-            <div className="column column-justified">
-              <h3 className="title">
-                <span role="img" aria-label="writing-hand">
-                  ✍️
-                </span>
-                Does man need FMT?
-              </h3>
-              <p className="content">
-                YES. Absolutely YES! Even though male has different reproductive
-                organs than female, however, male will still have emotional
-                tension store inside physical body.
-              </p>
-              <p className="content">
-                These negative energies are usually presenting as the symptoms
-                with central nerve system(CNS) or digestive system such as
-                insomnia, IBS, constipation, etc. The results of FMT for male
-                will usually be seen as improving sleeping pattern and reduce
-                the symptoms of digestive problems.
-              </p>
-            </div>
-            <div className="column">
-              <figure style={{ maxWidth: `960px`, margin: `2rem auto` }}>
-                <Img
-                  alt="Fertility massage - 2"
-                  fluid={data.FertilityImgsQuery_1.childImageSharp.fluid}
-                />
-              </figure>
-            </div>
-          </section>
+
           <section className="section columns">
             <div className="column">
               <h3 className="title">
@@ -114,24 +85,48 @@ const Fertility = ({ data }) => {
                 </ul>
               </div>
             </div>
-            {/* <div className="column">
-              <figure style={{ maxWidth: `320px`, margin: `2rem auto` }}>
+            <div className="column">
+              <figure style={{ maxWidth: `960px`, margin: `2rem auto` }}>
                 <Img
                   alt="Fertility massage - 3"
                   fluid={data.FertilityImgsQuery_2.childImageSharp.fluid}
                 />
               </figure>
-            </div> */}
+            </div>
           </section>
         </section>
-      </main>
-      <div className="section__video is-hidden-mobile">
-        <div className="container has-text-centered">
-          <video loop muted autoPlay>
-            <source media="(min-width: 320px)" src={fertilityVideo} />
-          </video>
+
+        <div className="section__video is-hidden-mobile">
+          <div className="container has-text-centered">
+            <video loop muted autoPlay>
+              <source media="(min-width: 320px)" src={fertilityVideo} />
+            </video>
+          </div>
         </div>
-      </div>
+        <section className="section columns">
+          <div className="column  is-8 is-offset-2">
+            <p className="content">
+              Fertility Massage Therapy does not claim to cure or diagnose any
+              medical conditions, nor does it replace any medical care that you
+              are under. If you have any medical concerns, please consult with
+              your Doctor or Health Care Professional.
+            </p>
+            <p className="content">
+              Fertility Massage Therapy is a complimentary therapy that supports
+              women during all stages of their reproductive life. There are no
+              pregnancy guarantees from receiving Fertility Massage Therapy.
+            </p>
+          </div>
+          {/* <div className="column">
+              <figure style={{ maxWidth: `960px`, margin: `2rem auto` }}>
+                <Img
+                  alt="Fertility massage - 2"
+                  fluid={data.FertilityImgsQuery_1.childImageSharp.fluid}
+                />
+              </figure>
+            </div> */}
+        </section>
+      </main>
     </Layout>
   )
 }
