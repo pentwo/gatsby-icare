@@ -39,17 +39,12 @@ export default class Testimony extends Component {
     if (!Array.isArray(this.state.quotes)) return
 
     const { avatarInfo } = this.props
-
-    // console.log('avatarInfo: ', avatarInfo)
-
     return this.state.quotes.map(quote => {
-      // console.log('quote.avatar', quote.avatar)
       const image = avatarInfo.filter(i => {
         return i.node.name === quote.avatar ? i.node.name : false
       })
-      // console.log('image: ', image[0].node)
 
-      return <Quote {...quote} avatarInfo={image[0].node} />
+      return <Quote {...quote} avatarInfo={image[0].node} key={quote.avatar} />
     })
   }
 
@@ -66,12 +61,13 @@ export default class Testimony extends Component {
 }
 
 const Quote = props => {
+  const name = props.name.split(' ').join('-')
   return (
-    <div className="column is-4 " id={`testimony-${props.name}`}>
+    <div className="column is-4 " id={`testimony-${name}`}>
       <figure className="image has-text-centered">
         <Img
           className=""
-          alt={props.name}
+          alt={name}
           fixed={props.avatarInfo.childImageSharp.fixed}
           imgStyle={{ borderRadius: '50%' }}
           backgroundColor="true"

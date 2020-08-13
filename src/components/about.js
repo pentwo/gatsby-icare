@@ -51,31 +51,27 @@ export default class About extends Component {
                 your care, I am dedicated to working with you and your family to
                 obtain reach your health goals.
               </p>
-              <p>
-                As part of Diploma of Remedial massage, I studied
-                <ul>
-                  <li>Deep Tissue</li>
-                  <li>Swedish</li>
-                  <li>Trigger Point</li>
-                  <li>Japanese Shiatsu</li>
-                  <li>Sport Massage</li>
-                  <li>Myofascial Release</li>
-                  <li>Positional Release</li>
-                  <li>Trager</li>
-                  <li>Postual Massage</li>
-                  <li>Reflexology</li>
-                  <li>Manual Lymphtic Drainage</li>
-                </ul>
-              </p>
-              <p>
-                Modalities I have learnt on top of my Remedial massage
-                <ul>
-                  <li>Pregnancy Massage</li>
-                  <li>Kinesiotaping</li>
-                  <li>Craniosacral Therapy</li>
-                  <li>Fertility Massage Therapy</li>
-                </ul>
-              </p>
+              <p>As part of Diploma of Remedial massage, I studied</p>
+              <ul>
+                <li>Deep Tissue</li>
+                <li>Swedish</li>
+                <li>Trigger Point</li>
+                <li>Japanese Shiatsu</li>
+                <li>Sport Massage</li>
+                <li>Myofascial Release</li>
+                <li>Positional Release</li>
+                <li>Trager</li>
+                <li>Postual Massage</li>
+                <li>Reflexology</li>
+                <li>Manual Lymphtic Drainage</li>
+              </ul>
+              <p>Modalities I have learnt on top of my Remedial massage</p>
+              <ul>
+                <li>Pregnancy Massage</li>
+                <li>Kinesiotaping</li>
+                <li>Craniosacral Therapy</li>
+                <li>Fertility Massage Therapy</li>
+              </ul>
             </div>
           </div>
         </div>
