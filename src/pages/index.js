@@ -17,13 +17,13 @@ import Features from '../components/features'
 // if (typeof window !== 'undefined') {
 //   ReactGA.initialize('UA-126836067-1')
 //   ReactGA.pageview(window.location.pathname + window.location.search)
-// }
 
 const tagManagerArgs = {
   gtmId: 'GTM-N9H2WJL',
 }
-
-TagManager.initialize(tagManagerArgs)
+if (typeof window !== 'undefined') {
+  TagManager.initialize(tagManagerArgs)
+}
 
 const IndexPage = ({ data }) => {
   return (
