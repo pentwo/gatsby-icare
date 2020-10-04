@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import Img from 'gatsby-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
-
-const TESTIMONY_API =
-  'https://api.sheety.co/b61e85ff-6929-42f0-b712-903293585003'
+import testimony from '../data/testimony.json'
 
 export default class Testimony extends Component {
   state = {
@@ -13,13 +11,9 @@ export default class Testimony extends Component {
   }
 
   setTestimonies = async () => {
-    await fetch(TESTIMONY_API)
-      .then(res => res.json())
-      .then(data => {
-        this.setState({
-          quotes: data,
-        })
-      })
+    this.setState({
+      quotes: testimony,
+    })
   }
 
   componentDidMount() {
@@ -90,21 +84,3 @@ const Quote = props => {
     </div>
   )
 }
-
-// const avatar = props => {
-
-//   <StaticQuery
-//     query={graphql`
-//       query {
-//         file(relativePath: { regex: regexName }) {
-//           childImageSharp {
-//             fixed(width: 150) {
-//               ...GatsbyImageSharpFixed
-//             }
-//           }
-//         }
-//       }
-//     `}
-//     render={data => <Img alt={name} fluid={data.file.childImageSharp.fixed} />}
-//   />
-// }
