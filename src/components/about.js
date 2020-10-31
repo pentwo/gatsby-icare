@@ -26,7 +26,7 @@ export default class About extends Component {
             <div className="column is-10 is-offset-1">
               <p>My name is Jenny.</p>
               <p>
-                I am a 9-years-experienced massage therapist. Qualified Diploma
+                I am a 10-years-experienced massage therapist. Qualified Diploma
                 of remedial massage and practitioner of pregnancy massage.
               </p>
               <p>

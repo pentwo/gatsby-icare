@@ -112,7 +112,7 @@ const Fertility = ({ data }) => {
               your Doctor or Health Care Professional.
             </p>
             <p className="content">
-              Fertility Massage Therapy is a complimentary therapy that supports
+              Fertility Massage Therapy is a complementary therapy that supports
               women during all stages of their reproductive life. There are no
               pregnancy guarantees from receiving Fertility Massage Therapy.
             </p>
