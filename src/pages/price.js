@@ -109,9 +109,9 @@ const SecondPage = ({ data }) => (
               <tbody>
                 <tr>
                   <td>
-                    First treatment (Including consultation) <br></br> 120 mins
+                    Initial treatment (including consultation) <br></br> 120 mins
                   </td>
-                  <td>$220</td>
+                  <td>$250</td>
                 </tr>
                 <tr>
                   <td>
