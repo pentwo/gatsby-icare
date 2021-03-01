@@ -48,30 +48,30 @@ const SecondPage = ({ data }) => (
               <tbody>
                 <tr>
                   <td>30 mins</td>
-                  <td>$50</td>
-                  <td>$60</td>
+                  <td>$55</td>
+                  <td>$65</td>
                 </tr>
                 <tr>
                   <td>45 mins</td>
-                  <td>$70</td>
-                  <td>$80</td>
+                  <td>$75</td>
+                  <td>$75</td>
                 </tr>
                 <tr className="">
                   <td>1 hour </td>
-                  <td>$90</td>
-                  <td>$100</td>
+                  <td>$95</td>
+                  <td>$105</td>
                 </tr>
                 <tr className="is-selected">
                   <td>1 hour 15 mins</td>
-                  <td>$115</td>
+                  <td>$120</td>
                   <td>
-                    $125 <span className="tag is-Danger">Most Popular</span>
+                    $130 <span className="tag is-Danger">Most Popular</span>
                   </td>
                 </tr>
                 <tr>
                   <td>1 hour 30 mins</td>
-                  <td>$135</td>
-                  <td>$145</td>
+                  <td>$140</td>
+                  <td>$150</td>
                 </tr>
               </tbody>
             </table>
@@ -109,7 +109,8 @@ const SecondPage = ({ data }) => (
               <tbody>
                 <tr>
                   <td>
-                    Initial treatment (including consultation) <br></br> 120 mins
+                    Initial treatment (including consultation) <br></br> 120
+                    mins
                   </td>
                   <td>$250</td>
                 </tr>
@@ -158,12 +159,12 @@ const SecondPage = ({ data }) => (
               <tbody>
                 <tr>
                   <td>1 hour </td>
-                  <td>$90</td>
+                  <td>$95</td>
                 </tr>
                 <tr className="is-selected">
                   <td>1 hour 30 mins</td>
                   <td>
-                    $135 <span className="tag is-Danger">Most Popular</span>
+                    $140 <span className="tag is-Danger">Most Popular</span>
                   </td>
                 </tr>
               </tbody>
@@ -202,25 +203,25 @@ const SecondPage = ({ data }) => (
               <tbody>
                 <tr>
                   <td>30 mins</td>
-                  <td>$45</td>
+                  <td>$55</td>
                 </tr>
                 <tr>
                   <td>45 mins</td>
-                  <td>$65</td>
+                  <td>$70</td>
                 </tr>
                 <tr className="is-selected">
                   <td>1 hour </td>
                   <td>
-                    $85 <span className="tag is-Danger">Most Popular</span>
+                    $90 <span className="tag is-Danger">Most Popular</span>
                   </td>
                 </tr>
                 <tr>
                   <td>1 hour 15 mins</td>
-                  <td>$110</td>
+                  <td>$115</td>
                 </tr>
                 <tr>
                   <td>1 hour 30 mins</td>
-                  <td>$130</td>
+                  <td>$135</td>
                 </tr>
               </tbody>
             </table>
