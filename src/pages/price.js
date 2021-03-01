@@ -54,7 +54,7 @@ const SecondPage = ({ data }) => (
                 <tr>
                   <td>45 mins</td>
                   <td>$75</td>
-                  <td>$75</td>
+                  <td>$85</td>
                 </tr>
                 <tr className="">
                   <td>1 hour </td>
