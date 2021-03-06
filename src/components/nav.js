@@ -49,7 +49,7 @@ export default class Nav extends Component {
               href="tel:+61861615173"
             >
               <FontAwesomeIcon icon={faPhone} />
-              &nbsp; Tel: 61615173
+              &nbsp; Tel: (08) 6161 5173
             </a>
             <div className="navbar-burger burger" data-target="navMenu">
               <span /> <span /> <span />
