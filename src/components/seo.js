@@ -69,7 +69,7 @@ function SEO({ description, lang, meta, keywords, title }) {
 
 SEO.defaultProps = {
   lang: `en`,
-  description: `Jenny is a 8-years-experienced massage therapist. Qualified Diploma of remedial massage and practitioner of pregnancy massage. (Work in Wu’s Asian Massage)`,
+  description: `Jenny is a 10-years-experienced massage therapist. Qualified Diploma of remedial massage and practitioner of pregnancy massage. (Work in Wu’s Asian Massage)`,
   meta: [],
   keywords: [
     'Deep Tissue',
