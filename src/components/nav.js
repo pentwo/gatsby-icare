@@ -46,10 +46,10 @@ export default class Nav extends Component {
             <a
               // onClick={gtag_report_conversion('tel:61861615173')}
               className="navbar-item"
-              href="tel:+61861615173"
+              href="tel:+61431192844"
             >
               <FontAwesomeIcon icon={faPhone} />
-              &nbsp; Tel: (08) 6161 5173
+              &nbsp; Tel: 0431 192 844
             </a>
             <div className="navbar-burger burger" data-target="navMenu">
               <span /> <span /> <span />
