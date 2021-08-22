@@ -128,7 +128,7 @@ export const query = graphql`
       }
     }
 
-    JennyAdQuery: file(relativePath: { eq: "jennyad.jpg" }) {
+    JennyAdQuery: file(relativePath: { eq: "jennyad.png" }) {
       childImageSharp {
         fluid(maxWidth: 960) {
           ...GatsbyImageSharpFluid_noBase64
