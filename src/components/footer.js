@@ -24,8 +24,8 @@ export default class footer extends Component {
                 </div>
                 <div>
                   <small>
-                    {' '}
-                    Made by <Link to="/">Code by Pen</Link>{' '}
+                    Made by{' '}
+                    <a href="https://www.stevenpeng.com.au">Steven Peng</a>
                   </small>
                 </div>
                 <div>
