@@ -13,7 +13,7 @@ export default class Map extends Component {
               </a>
             </li>
             <li>
-              <a href="tel:+61415040248">Tel: 0415 040 248</a>
+              <a href="tel:+61431192844">Tel: 0431 192 844</a>
             </li>
           </ul>
         </div>
