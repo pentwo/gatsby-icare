@@ -13,6 +13,7 @@ import Nav from '../components/nav'
 import Map from '../components/map'
 import Testimony from '../components/testimony'
 import Features from '../components/features'
+import Cancelation from '../components/Cancelation'
 
 // if (typeof window !== 'undefined') {
 //   ReactGA.initialize('UA-126836067-1')
@@ -97,6 +98,9 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
         </div>
+      </section>
+      <section className="section">
+        <Cancelation></Cancelation>
       </section>
       <section className="section testimony">
         <Testimony avatarInfo={data.AvatarQueryAll.edges} />

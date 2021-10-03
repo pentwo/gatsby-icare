@@ -8,6 +8,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Hero from '../components/hero'
 import BgImage from '../components/BgImage'
+import Cancelation from '../components/Cancelation'
 
 const SecondPage = ({ data }) => (
   <Layout>
@@ -229,6 +230,10 @@ const SecondPage = ({ data }) => (
         </div>
       </section>
     </BgImage>
+
+    <section className="section">
+      <Cancelation />
+    </section>
   </Layout>
 )
 
