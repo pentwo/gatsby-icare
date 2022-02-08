@@ -21,8 +21,8 @@ export default class Nav extends Component {
     // Check if there are any navbar burgers
     if ($navbarBurgers.length > 0) {
       // Add a click event on each of them
-      $navbarBurgers.forEach(function(el) {
-        el.addEventListener('click', function() {
+      $navbarBurgers.forEach(function (el) {
+        el.addEventListener('click', function () {
           // Get the target from the "data-target" attribute
           var target = el.dataset.target
           var $target = document.getElementById(target)
@@ -93,7 +93,7 @@ export default class Nav extends Component {
               </Link>
             </div>
 
-            <div className="navbar-end">
+            {/* <div className="navbar-end">
               <div className="navbar-item">
                 <div className="field is-grouped">
                   <p className="control">
@@ -124,7 +124,7 @@ export default class Nav extends Component {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </nav>
       </React.Fragment>

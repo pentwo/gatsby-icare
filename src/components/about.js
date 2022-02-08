@@ -26,7 +26,7 @@ export default class About extends Component {
             <div className="column is-10 is-offset-1">
               <p>My name is Jenny.</p>
               <p>
-                I am a 10-years-experienced massage therapist. Qualified Diploma
+                I am a 11-years-experienced massage therapist. Qualified Diploma
                 of remedial massage and practitioner of pregnancy massage.
               </p>
               <p>
@@ -61,7 +61,7 @@ export default class About extends Component {
                 <li>Myofascial Release</li>
                 <li>Positional Release</li>
                 <li>Trager</li>
-                <li>Postual Massage</li>
+                <li>Postnatal Massage</li>
                 <li>Reflexology</li>
                 <li>Manual Lymphtic Drainage</li>
               </ul>
@@ -69,7 +69,7 @@ export default class About extends Component {
               <ul>
                 <li>Pregnancy Massage</li>
                 <li>Kinesiotaping</li>
-                <li>Craniosacral Therapy</li>
+                <li>Reiki Therapy</li>
                 <li>Fertility Massage Therapy</li>
               </ul>
             </div>
@@ -93,7 +93,7 @@ const ImageJennyPortrait = () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <Img
         alt="jenny's Portrait"
         imgStyle={{ borderRadius: '50%' }}

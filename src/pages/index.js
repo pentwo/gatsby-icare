@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => {
                 <h2 className="subtitle is-4">
                   The best time to take care of you
                 </h2>
-                <div className="buttons are-medium">
+                {/* <div className="buttons are-medium">
                   <a
                     className="button is-primary"
                     href="https://wuasianmassage.mylocalsalon.com/onlinebooking/v7410/Steps/SelectServices.aspx"
@@ -64,7 +64,7 @@ const IndexPage = ({ data }) => {
                     </span>
                     <span>Gift Voucher</span>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -105,9 +105,9 @@ const IndexPage = ({ data }) => {
       <section className="section testimony">
         <Testimony avatarInfo={data.AvatarQueryAll.edges} />
       </section>
-      <section className="section map">
+      {/* <section className="section map">
         <Map />
-      </section>
+      </section> */}
     </Layout>
   )
 }
@@ -132,7 +132,7 @@ export const query = graphql`
       }
     }
 
-    JennyAdQuery: file(relativePath: { eq: "jennyad.png" }) {
+    JennyAdQuery: file(relativePath: { eq: "jennyad.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 960) {
           ...GatsbyImageSharpFluid_noBase64
