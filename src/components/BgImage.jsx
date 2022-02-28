@@ -2,7 +2,7 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from 'styled-components'
 
 const Parent = styled.div`
@@ -10,12 +10,13 @@ const Parent = styled.div`
   background-color: ${({ bc }) => bc};
 `
 
-const FakeBgImage = styled(Img)`
+const FakeBgImage = styled(GatsbyImage)`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: ${({ height }) => height};
+  width: 100%;
+  
   z-index: -1;
 
   & > img {
@@ -40,33 +41,38 @@ const BgImage = ({
   fluid,
   title,
   height,
-  mobileHeight,
+  alt,
+  mobileheight,
   overlayColor,
   children,
   className,
-}) => (
+}) => {
+  return (
   <Parent bc={overlayColor}>
     <FakeBgImage
-      fluid={fluid}
+      image={fluid}
       title={title}
       height={height}
-      mobileHeight={mobileHeight}
+      mobileheight={mobileheight}
+      alt={alt}
     />
     <Content className={className}>{children}</Content>
   </Parent>
-)
+)}
+
 BgImage.propTypes = {
   fluid: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   height: PropTypes.string,
-  mobileHeight: PropTypes.string,
+  alt: PropTypes.string,
+  mobileheight: PropTypes.string,
   overlayColor: PropTypes.string,
   children: PropTypes.node,
   className: PropTypes.string,
 }
 BgImage.defaultProps = {
   height: null,
-  mobileHeight: null,
+  mobileheight: null,
   overlayColor: 'transparent',
   children: null,
   className: null,

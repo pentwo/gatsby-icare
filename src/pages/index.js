@@ -1,23 +1,16 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendarAlt, faTicketAlt } from '@fortawesome/free-solid-svg-icons'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
-// import ReactGA from 'react-ga'
+import { GatsbyImage } from "gatsby-plugin-image";
 import TagManager from 'react-gtm-module'
 
 import Layout from '../components/layout'
-import SEO from '../components/seo'
-import About from '../components/about'
-import Nav from '../components/nav'
-import Map from '../components/map'
-import Testimony from '../components/testimony'
-import Features from '../components/features'
+import SEO from '../components/Seo'
+import About from '../components/About'
+import Nav from '../components/Nav'
+import Testimony from '../components/Testimony'
+import Features from '../components/Features'
 import Cancelation from '../components/Cancelation'
 
-// if (typeof window !== 'undefined') {
-//   ReactGA.initialize('UA-126836067-1')
-//   ReactGA.pageview(window.location.pathname + window.location.search)
 
 const tagManagerArgs = {
   gtmId: 'GTM-N9H2WJL',
@@ -76,10 +69,9 @@ const IndexPage = ({ data }) => {
       </section>
       <section className="section has-text-centered">
         <figure style={{ maxWidth: `960px`, margin: `0 auto` }}>
-          <Img
-            alt="pregnancy massage ad"
-            fluid={data.JennyAdQuery.childImageSharp.fluid}
-          />
+          <GatsbyImage
+            image={data.JennyAdQuery.childImageSharp.gatsbyImageData}
+            alt="pregnancy massage ad" />
         </figure>
       </section>
       <section className="section about">
@@ -109,35 +101,27 @@ const IndexPage = ({ data }) => {
         <Map />
       </section> */}
     </Layout>
-  )
+  );
 }
 
 export default IndexPage
 
-export const query = graphql`
-  query allImgsQuery {
-    AvatarQueryAll: allFile(
-      filter: { relativePath: { regex: "/avatar/.*.jpg/" } }
-    ) {
-      edges {
-        node {
-          relativePath
-          name
-          childImageSharp {
-            fixed(width: 150) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-      }
-    }
-
-    JennyAdQuery: file(relativePath: { eq: "jennyad.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 960) {
-          ...GatsbyImageSharpFluid_noBase64
+export const query = graphql`query allImgsQuery {
+  AvatarQueryAll: allFile(filter: {relativePath: {regex: "/avatar/.*.jpg/"}}) {
+    edges {
+      node {
+        relativePath
+        name
+        childImageSharp {
+          gatsbyImageData(width: 150, layout: FIXED)
         }
       }
     }
   }
+  JennyAdQuery: file(relativePath: {eq: "jennyad.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 960, placeholder: NONE, layout: CONSTRAINED)
+    }
+  }
+}
 `

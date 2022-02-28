@@ -1,8 +1,8 @@
 import React from 'react'
 
 import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Hero from '../components/hero'
+import SEO from '../components/Seo'
+import Hero from '../components/Hero'
 
 const Service = () => (
   <Layout>
@@ -37,20 +37,7 @@ const Service = () => (
           </p>
         </div>
       </section>
-      <section className="section service">
-        <div className="container">
-          <h1 className="title">What is Aromatherapy Massage?</h1>
-          <p>
-            <strong>Aromatherapy massage</strong> is Swedish massage therapy
-            using massage oil mix with herbal essential oils, such us lemon,
-            peppermint, lavender, etc. During an aromatherapy massage, you
-            inhale these essential oil molecules or absorb them through your
-            skin. They thought to promote beneficial changes in your mind and
-            body by affecting the lambic system, a range of brain known to
-            influence the nervous system.
-          </p>
-        </div>
-      </section>
+      
       <section className="section service">
         <div className="container">
           <h1 className="title">What is Pregnancy/Prenatal Massage?</h1>

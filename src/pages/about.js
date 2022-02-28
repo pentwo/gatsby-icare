@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Hero from '../components/hero'
-import SEO from '../components/seo'
+import Hero from '../components/Hero'
+import SEO from '../components/Seo'
 import Layout from '../components/layout'
-import About from '../components/about'
+import About from '../components/About'
 
 const about = () => {
   return (

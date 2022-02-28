@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { graphql, StaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export default class About extends Component {
   render() {
@@ -45,7 +45,7 @@ export default class About extends Component {
                 in infertility, irregular menstrual cycle, imbalance hormones
                 during menopause, heavy period pain ...etc. Also I am more than
                 happy to provide my support to every member in the family,
-                Fathers, Mothers, Grandparents, Sons, Daughters, etc. with 9
+                Fathers, Mothers, Grandparents, Sons, Daughters, etc. with 11
                 years in the field of Remedial Massage, I have wealth of
                 experience that will ensure that you obtain the best result of
                 your care, I am dedicated to working with you and your family to
@@ -60,7 +60,6 @@ export default class About extends Component {
                 <li>Sport Massage</li>
                 <li>Myofascial Release</li>
                 <li>Positional Release</li>
-                <li>Trager</li>
                 <li>Postnatal Massage</li>
                 <li>Reflexology</li>
                 <li>Manual Lymphtic Drainage</li>
@@ -82,23 +81,19 @@ export default class About extends Component {
 
 const ImageJennyPortrait = () => (
   <StaticQuery
-    query={graphql`
-      query {
-        file(relativePath: { eq: "portrait.jpg" }) {
-          childImageSharp {
-            fixed(width: 520) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-      }
-    `}
+    query={graphql`{
+  file(relativePath: {eq: "portrait.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 520, layout: FIXED)
+    }
+  }
+}
+`}
     render={(data) => (
-      <Img
+      <GatsbyImage
+        image={data.file.childImageSharp.gatsbyImageData}
         alt="jenny's Portrait"
-        imgStyle={{ borderRadius: '50%' }}
-        fixed={data.file.childImageSharp.fixed}
-      />
+        imgStyle={{ borderRadius: '50%' }} />
     )}
   />
 )

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
 import testimony from '../data/testimony.json'
@@ -59,13 +59,12 @@ const Quote = props => {
   return (
     <div className="column is-4 " id={`testimony-${name}`}>
       <figure className="image has-text-centered">
-        <Img
+        <GatsbyImage
+          image={props.avatarInfo.childImageSharp.gatsbyImageData}
           className=""
           alt={name}
-          fixed={props.avatarInfo.childImageSharp.fixed}
           imgStyle={{ borderRadius: '50%' }}
-          backgroundColor="true"
-        />
+          backgroundColor="true" />
       </figure>
       <p className="has-text-left">
         <i className="fas fa-quote-left" />
@@ -82,5 +81,5 @@ const Quote = props => {
         {props.name}
       </p>
     </div>
-  )
+  );
 }

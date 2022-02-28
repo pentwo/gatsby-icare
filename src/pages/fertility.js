@@ -1,10 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Hero from '../components/hero'
+import SEO from '../components/Seo'
+import Hero from '../components/Hero'
 
 import fertilityVideo from '../videos/fertility.mp4'
 
@@ -39,10 +39,9 @@ const Fertility = ({ data }) => {
             </div>
             <div className=" column">
               <figure style={{ maxWidth: `960px`, margin: `2rem auto` }}>
-                <Img
-                  alt="Fertility massage - 1"
-                  fluid={data.FertilityImgsQuery_3.childImageSharp.fluid}
-                />
+                <GatsbyImage
+                  image={data.FertilityImgsQuery_3.childImageSharp.gatsbyImageData}
+                  alt="Fertility massage - 1" />
               </figure>
             </div>
           </section>
@@ -87,10 +86,9 @@ const Fertility = ({ data }) => {
             </div>
             <div className="column">
               <figure style={{ maxWidth: `960px`, margin: `2rem auto` }}>
-                <Img
-                  alt="Fertility massage - 3"
-                  fluid={data.FertilityImgsQuery_2.childImageSharp.fluid}
-                />
+                <GatsbyImage
+                  image={data.FertilityImgsQuery_2.childImageSharp.gatsbyImageData}
+                  alt="Fertility massage - 3" />
               </figure>
             </div>
           </section>
@@ -128,43 +126,30 @@ const Fertility = ({ data }) => {
         </section>
       </main>
     </Layout>
-  )
+  );
 }
 
 export default Fertility
 
-export const imageQuery = graphql`
-  query allFertilityImgsQuery {
-    FertilityImgsQuery_1: file(
-      relativePath: { eq: "fertility-images/P1002696.JPG" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 960) {
-          ...GatsbyImageSharpFluid_noBase64
-        }
-      }
-    }
-
-    FertilityImgsQuery_2: file(
-      relativePath: { eq: "fertility-images/P1002710.JPG" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 960) {
-          ...GatsbyImageSharpFluid_noBase64
-        }
-      }
-    }
-
-    FertilityImgsQuery_3: file(
-      relativePath: { eq: "fertility-images/fertility-massage-4.jpg" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 960) {
-          ...GatsbyImageSharpFluid_noBase64
-        }
-      }
+export const imageQuery = graphql`query allFertilityImgsQuery {
+  FertilityImgsQuery_1: file(relativePath: {eq: "fertility-images/P1002696.JPG"}) {
+    childImageSharp {
+      gatsbyImageData(width: 960, placeholder: NONE, layout: CONSTRAINED)
     }
   }
+  FertilityImgsQuery_2: file(relativePath: {eq: "fertility-images/P1002710.JPG"}) {
+    childImageSharp {
+      gatsbyImageData(width: 960, placeholder: NONE, layout: CONSTRAINED)
+    }
+  }
+  FertilityImgsQuery_3: file(
+    relativePath: {eq: "fertility-images/fertility-massage-4.jpg"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(width: 960, placeholder: NONE, layout: CONSTRAINED)
+    }
+  }
+}
 `
 // allFile(
 //   filter: { relativePath: { regex: "/Fertility-Massage-1.jpg/" } }

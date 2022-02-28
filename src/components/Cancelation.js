@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import { graphql, StaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
 
 export default class Cancelation extends Component {
   render() {

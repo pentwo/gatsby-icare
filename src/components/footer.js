@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { graphql, Link, StaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
+import { graphql, StaticQuery } from 'gatsby'
+import { GatsbyImage } from "gatsby-plugin-image";
 
-export default class footer extends Component {
+export default class Footer extends Component {
   render() {
     return (
       <React.Fragment>
@@ -60,19 +60,16 @@ export default class footer extends Component {
   }
 }
 
-const Image = () => (
+const Image = ({alt}) => (
   <StaticQuery
-    query={graphql`
-      query {
-        file(relativePath: { eq: "made-with-bulma.png" }) {
-          childImageSharp {
-            fixed(width: 128) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-      }
-    `}
-    render={data => <Img fixed={data.file.childImageSharp.fixed} />}
+    query={graphql`{
+  file(relativePath: {eq: "made-with-bulma.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 128, layout: FIXED)
+    }
+  }
+}
+`}
+    render={data => <GatsbyImage alt={alt} image={data.file.childImageSharp.gatsbyImageData} />}
   />
 )
