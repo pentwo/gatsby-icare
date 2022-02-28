@@ -2,8 +2,8 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { GatsbyImage } from "gatsby-plugin-image";
 
-import Layout from '../components/layout'
-import SEO from '../components/Seo'
+import Layout from '../components/Layout'
+import Seo from '../components/Seo'
 import Hero from '../components/Hero'
 
 import fertilityVideo from '../videos/fertility.mp4'
@@ -11,7 +11,7 @@ import fertilityVideo from '../videos/fertility.mp4'
 const Fertility = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Fertility Massage" />
+      <Seo title="Fertility Massage" />
       <Hero title="Fertility Massage Therapy" />
       <main>
         <section className="container">

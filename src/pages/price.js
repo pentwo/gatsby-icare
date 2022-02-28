@@ -4,8 +4,8 @@ import { graphql } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
-import Layout from '../components/layout'
-import SEO from '../components/Seo'
+import Layout from '../components/Layout'
+import Seo from '../components/Seo'
 import Hero from '../components/Hero'
 import BgImage from '../components/BgImage'
 import Cancelation from '../components/Cancelation'
@@ -26,7 +26,7 @@ const PricePage = ({ data }) => {
   
   return (
   <Layout>
-    <SEO title="Price" />
+    <Seo title="Price" />
     <Hero />
     {/* Remedial */}
     <BgImage

@@ -3,8 +3,8 @@ import { graphql } from 'gatsby'
 import { GatsbyImage } from "gatsby-plugin-image";
 import TagManager from 'react-gtm-module'
 
-import Layout from '../components/layout'
-import SEO from '../components/Seo'
+import Layout from '../components/Layout'
+import Seo from '../components/Seo'
 import About from '../components/About'
 import Nav from '../components/Nav'
 import Testimony from '../components/Testimony'
@@ -22,7 +22,7 @@ if (typeof window !== 'undefined') {
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <Seo title="Home" />
       <section className="hero is-large is-primary">
         <div className="hero-head">
           <div className="container">

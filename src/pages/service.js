@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Layout from '../components/layout'
-import SEO from '../components/Seo'
+import Layout from '../components/Layout'
+import Seo from '../components/Seo'
 import Hero from '../components/Hero'
 
 const Service = () => (
   <Layout>
-    <SEO title="Services" />
+    <Seo title="Services" />
     <Hero />
     <section className="section services">
       <section className="section service">
