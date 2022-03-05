@@ -2,12 +2,10 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faCalendarAlt,
   faPhone,
   faHome,
   faHandHoldingHeart,
   faDollarSign,
-  faTicketAlt,
   faHandPaper,
 } from '@fortawesome/free-solid-svg-icons'
 
@@ -81,9 +79,6 @@ export default class Nav extends Component {
                   </Link>
                   <Link to="/service" className="navbar-item">
                     Pregnancy Massage
-                  </Link>
-                  <Link to="/service" className="navbar-item">
-                    Aromatherapy Massage
                   </Link>
                 </div>
               </div>

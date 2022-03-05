@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { graphql, Link, StaticQuery } from 'gatsby'
+import { graphql,  StaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 
 export default class footer extends Component {

@@ -1,6 +1,4 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendarAlt, faTicketAlt } from '@fortawesome/free-solid-svg-icons'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 // import ReactGA from 'react-ga'
@@ -10,14 +8,9 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import About from '../components/about'
 import Nav from '../components/nav'
-import Map from '../components/map'
 import Testimony from '../components/testimony'
 import Features from '../components/features'
 import Cancelation from '../components/Cancelation'
-
-// if (typeof window !== 'undefined') {
-//   ReactGA.initialize('UA-126836067-1')
-//   ReactGA.pageview(window.location.pathname + window.location.search)
 
 const tagManagerArgs = {
   gtmId: 'GTM-N9H2WJL',

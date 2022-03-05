@@ -39,20 +39,6 @@ const Service = () => (
       </section>
       <section className="section service">
         <div className="container">
-          <h1 className="title">What is Aromatherapy Massage?</h1>
-          <p>
-            <strong>Aromatherapy massage</strong> is Swedish massage therapy
-            using massage oil mix with herbal essential oils, such us lemon,
-            peppermint, lavender, etc. During an aromatherapy massage, you
-            inhale these essential oil molecules or absorb them through your
-            skin. They thought to promote beneficial changes in your mind and
-            body by affecting the lambic system, a range of brain known to
-            influence the nervous system.
-          </p>
-        </div>
-      </section>
-      <section className="section service">
-        <div className="container">
           <h1 className="title">What is Pregnancy/Prenatal Massage?</h1>
           <p>
             <strong>Pregnancy massage</strong> is the prenatal use of massage
